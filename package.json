@@ -1,0 +1,16 @@
+{
+  "name": "modulo-1",
+  "version": "1.0.0",
+  "description": "nuestro primer proyecto de nodejs\u001b[D\u001b[D js",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://pitercid@bitbucket.org/pitercid/modulo-1.git"
+  },
+  "author": "Pedro Cid",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/pitercid/modulo-1#readme"
+}
