@@ -7,82 +7,129 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="css/main.css" >
 
     <title>Mermeladas caseras</title>
   </head>
-  <body>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="node_modules/jquery/dist/jquery.min.js" ></script>
-    <script src="node_modules/popper.js/dist/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    
-    <div class = "jumbotron">
-
-            <!--display 4 muestra titulo-->>
-            <h1 class="display-4">Mermeladas Caseras</h1>
-            <!--subtitulo-->
-            <p class="lead">mano de monja</p>
+    <body>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="node_modules/jquery/dist/jquery.min.js" ></script>
+        <script src="node_modules/popper.js/dist/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
         
-        
-        
-    </div>
+        <div class = "jumbotron">
 
-    
-    <div class="container">
-        <p class="h1">Beneficios</p>
-        <div class="row">
-            <div class="col-sm-4">
-                <h3 >1</h3>
-                <p>Sin azúcar añadida</p>
-            </div>
-
-            <div class="col-sm-4">
-                <h3 >2</h3>
-                <p>Endulzado con Stevia</p>
-            </div>
-
-            <div class="col-sm-4">
-                <h3 >3</h3>
-                <p>Fruta Organica</p>
-            </div>
+                <!--display 4 muestra titulo-->>
+                <h1 class="display-4">Mermeladas Caseras</h1>
+                <!--subtitulo-->
+                <p class="lead">mano de monja</p>
+            
+            
             
         </div>
-        <!-- Separacion de linea-->
-        <hr>
 
-        <div class="row">
-            <div class="col-sm-3">
-                <h4 >Mermelada de Frambuesa</h4>
-                <p >Mermelada de frambuesa con notas de naranja y canela</p>
-                <button type="button" class="btn btn-primary">Ver</button>
-            </div>
-            
         
-            <div class="col-sm-3">
-                <h4 >Mermelada de Ciruela</h4>
-                <p >Realizada con ciruelas organicas del huerto</p>
-                <button type="button" class="btn btn-primary">Ver</button>
-            </div>
-            
-        
-            <div class="col-sm-3">
-                <h4 >Mermelada de Cebolla</h4>
-                <p >Mermelada de cebolla en reduccion de un excelente Carmenerè</p>
-                <button type="button" class="btn btn-primary">Ver</button>
-        
-            </div>
+        <div class="container">
+            <p class="h1">Beneficios</p>
+            <div class="row">
+                <div class="col-sm-4">
+                    <h3 >1</h3>
+                    <p>Sin azúcar añadida</p>
+                </div>
 
-            <div class="col-sm-3">
-                <h4 >Mermelada de Ají</h4>
-                <p >Mermelada de ají rojo, semi picante</p>
-                <button type="button" class="btn btn-primary">Ver</button>
-        
+                <div class="col-sm-4">
+                    <h3 >2</h3>
+                    <p>Endulzado con Stevia</p>
+                </div>
+
+                <div class="col-sm-4">
+                    <h3 >3</h3>
+                    <p>Fruta Organica</p>
+                </div>
+                
             </div>
+            <!-- Separacion de linea-->
+            <hr>
+            <!-- d-flex flex-wrap flex-row maneja como si fuera row sin flex-->
+            <div class="d-flex flex-wrap flex-row">
+                <div class="card d-flex flex-column justify-content-between">
+                    <h4 >Mermelada de Frambuesa</h4>
+                    <div>
+                        <p >Mermelada de frambuesa con notas de naranja y canela</p>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-primary btn-reserve">Ver</button>
+                    </div>
+                </div>
+                
+                
             
+                <div class="card d-flex flex-column justify-content-between">
+                    <h4 >Mermelada de Ciruela</h4>
+                    <div>
+                        <p >Realizada con ciruelas organicas del huerto</p>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-primary btn-reserve">Ver</button>
+                    </div>
+                </div>
+                
+                
+            
+                <div class="card d-flex flex-column justify-content-between">
+                    <h4 >Mermelada de Cebolla</h4>
+                    
+                    <div>
+                        <p >Mermelada de cebolla en reduccion de un excelente Carmenerè</p>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-primary btn-reserve">Ver</button>
+                    </div>
+                </div>
+
+                
+
+                <div class="card d-flex flex-column justify-content-between">
+                    <h4 >Mermelada de Ají</h4>
+                    <div>
+                        <p >Mermelada de ají rojo, semi picante</p>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-primary btn-reserve">Ver</button>
+                    </div>
+                </div>
+                
+                
+            </div>
         </div>
-    </div>
+    <hr>
+    <footer class="container">
+        <div class="d-flex justify-content-between">
+            <div>
+                <p> <a href="http:\\www.facebook.com">Facebook</a> </p>
+                <p> <a href="http:\\www.twitter.com">Twitter</a></p>
+                <p> <a href="http:\\www.instagram.com">Instagram</a></p>
+            </div>
 
+            <div>
+                <address>
+                    <h5>Contacto</h5>
+                    <p>Av Canolica #225, Santiago de Chile</p>
+                    <p>+56912345678</p>
+                    <p>contacto@mermeladasmanodemonja.com</p>
+                </address>
+            </div>
+                
+            <div>
+                <p> <a href="http:\\www.facebook.com">Nosotros</a> </p>
+                <p> <a href="http:\\www.twitter.com">Despacho</a></p>
+                <p> <a href="http:\\www.instagram.com">Precios</a></p>
+                
+                
+            </div>
 
-  </body>
+        </div>
+    </footer>
+    </body>
 </html>
