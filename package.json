@@ -4,6 +4,7 @@
   "description": "nuestro primer proyecto de nodejs\u001b[D\u001b[D js",
   "main": "index.html",
   "scripts": {
+    "dev" : " lite-server ",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -12,5 +13,8 @@
   },
   "author": "Pedro Cid",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/pitercid/modulo-1#readme"
+  "homepage": "https://bitbucket.org/pitercid/modulo-1#readme",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
 }
