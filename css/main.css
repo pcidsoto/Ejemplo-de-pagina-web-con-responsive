@@ -1,6 +1,7 @@
 .jumbotron{
     background-color: #9FF9EB;
     color: black;
+    margin-top: 50px;
 }
 
 .footer{
@@ -20,3 +21,4 @@
     border: none;
     color: black;
 }
+
