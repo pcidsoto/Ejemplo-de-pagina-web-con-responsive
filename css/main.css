@@ -1,12 +1,11 @@
 .jumbotron{
-    background-color: #DB3457;
+    background-color: #9FF9EB;
     color: black;
 }
 
 .footer{
     padding: 10px 10px 0 10px;
-    background-color:#34DBB8;
-    margin-bottom: 0px;
+    
 }
 
 .card{
@@ -15,6 +14,9 @@
     border: none;
 }
 
-.btn-reserve{
+.btn{
     width: 100%;
+    background-color: #9FF9A6;
+    border: none;
+    color: black;
 }
