@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" >
-    <link rel="stylesheet" href="css/main.css" >
+    <link rel="stylesheet" href="css/contact.css" >
     <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css" >
 
 
@@ -30,10 +30,10 @@
             <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item "> <a class="nav-link" href="./index.html">Home</a></li>
-                    <li class="nav-item active"><a class="nav-link" href="./about.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./about.html">Nosotros</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Precios</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Despacho</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./contact.html">Contacto</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="#">Contacto</a></li>
                 </ul>
             </div>
         </nav>
@@ -50,30 +50,68 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a  href="./index.html">Home</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Nosotros</li>
+                  <li class="breadcrumb-item active" aria-current="page">Contacto</li>
                 </ol>
             </nav>
 
-            <div>
-                <span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Aenean et hendrerit magna, ut volutpat ipsum. 
-                    Vivamus accumsan consectetur odio molestie tincidunt. 
-                    Praesent sit amet enim nisl. Pellentesque a luctus eros. 
-                    Duis vulputate eleifend orci. Etiam non tempus ipsum, ut vehicula sapien. 
-                    Pellentesque neque lorem, eleifend non enim id, efficitur sodales risus. 
-                    Nullam et est dapibus, congue augue in, euismod sapien. Maecenas in iaculis dui. 
-                    Vivamus mattis a velit a aliquam. 
-                    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-                    Aenean eu felis mollis, egestas ex a, cursus libero. Sed sollicitudin et leo vel cursus.</span>
-            </div>
-
+            
+            <h1>Dejanos tu comentario</h1>
+            <form>
+            <div class="form-row">
+                <div class="form-group col-sm-6">
+                    <!--input tiene que estar emparejado con el label-->
+                    <label for="nombre">Nombre</label>
+                    <input type="text" class="form-control" id="nombre"
+                    placeholder="Ingrese su nombre">
+                </div>
+                <div class="form-group col-sm-6">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" class="form-control" id="apellido"
+                    placeholder="Ingrese su apellido"></div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email"
+                    placeholder="Ingrese su email">
+                </div>
+                <!--Formulario-->
+                <div class="form-row">
+                    <div class="form-group col-sm-7">
+                        <!--input tiene que estar emparejado con el label-->
+                        <label for="domicilio">Dirección de contacto</label>
+                        <input type="text" class="form-control" id="domicilio"
+                        placeholder="Ingrese calle">
+                    </div>
+                    <div class="form-group col-sm-2">
+                        <!--input tiene que estar emparejado con el label-->
+                        <label for="numero">Número</label>
+                        <input type="text" class="form-control" id="numero"
+                        placeholder="Nº">
+                    </div>
+                    <div class="form-group col-sm-3">
+                        <label for="comuna">Comuna</label>
+                        <select id="comuna" class="form-control">
+                            <option selected>Rengo</option>
+                            <option >Rosario</option>
+                            <option >Requinoa</option>
+                            <option >Rancagua</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="comentario">Comentario</label>
+                    <textarea id="comentario" class="form-control" rows="10"></textarea>
+                </div>
+                <!--checkbox contactame-->
+                <div class="form-check check">
+                    <input type="checkbox" class="form-check-input" id="contactame">
+                    <label class="form-check-label" for="contactame">Contactame</label>
+                </div>
+                <button class="btn btn-primary" type="submit">Enviar</button>
+                </form>
             
         </div>
         
-           
-               
-           
-    
     <hr>
     <footer class="footer container">
         <div class="d-flex flex-wrap flex-row justify-content-between">
