@@ -4,19 +4,26 @@
     margin-top: 50px;
 }
 
+.sub-title{
+    padding-bottom: 50px;
+}
+
+.benefic{
+    font-style: italic;
+}
+
 .footer{
     padding: 10px 10px 0 10px;
     
 }
 
-.card{
-    flex: 150px;
-    padding: 2px 5px 2px 5px;
-    border: none;
+.card-deck{
+
+    padding-top: 50px;
 }
 
 .btn{
-    width: 100%;
+    width: 80%;
     background-color: #9FF9A6;
     border: none;
     color: black;
@@ -39,3 +46,36 @@
     padding-left: 40px;
     padding-right: 40px;
 }
+
+/*Controla el responsive de manera mas elegante*/
+.card-deck {
+    margin: 0 -15px;
+    justify-content: space-between;
+  }
+  
+  .card-deck .card {
+    margin: 0 0 1rem;
+  }
+  
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    .card-deck .card {
+      -ms-flex: 0 0 48.7%;
+      flex: 0 0 48.7%;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .card-deck .card {
+      -ms-flex: 0 0 32%;
+      flex: 0 0 32%;
+    }
+  }
+  
+  @media (min-width: 992px)
+  {
+    .card-deck .card {
+      -ms-flex: 0 0 24%;
+      flex: 0 0 24%;
+    }
+  }
+  
