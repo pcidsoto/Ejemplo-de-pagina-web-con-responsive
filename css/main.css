@@ -4,6 +4,10 @@
     margin-top: 50px;
 }
 
+.img-fluid{
+  max-width: 100%;
+}
+
 .sub-title{
     padding-bottom: 50px;
 }
