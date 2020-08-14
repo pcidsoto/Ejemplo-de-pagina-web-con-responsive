@@ -94,3 +94,27 @@
     }
   }
   
+
+  /*CSS ACCORDION*/
+
+  .myaccordion {
+    max-width: 500px;
+    margin: 50px auto;
+    
+  }
+  
+  /*Card sin borde*/
+  .myaccordion .card,
+  .myaccordion .card:last-child .card-header {
+    border: none;
+  }
+  
+/*fondo de texto transparente*/
+  .myaccordion .card-header {
+    border-bottom-color: #7cb0ca;
+    background: transparent;
+  }
+  
+  
+ 
+  

@@ -55,16 +55,53 @@
             </nav>
 
             <div>
-                <span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Aenean et hendrerit magna, ut volutpat ipsum. 
-                    Vivamus accumsan consectetur odio molestie tincidunt. 
-                    Praesent sit amet enim nisl. Pellentesque a luctus eros. 
-                    Duis vulputate eleifend orci. Etiam non tempus ipsum, ut vehicula sapien. 
-                    Pellentesque neque lorem, eleifend non enim id, efficitur sodales risus. 
-                    Nullam et est dapibus, congue augue in, euismod sapien. Maecenas in iaculis dui. 
-                    Vivamus mattis a velit a aliquam. 
-                    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-                    Aenean eu felis mollis, egestas ex a, cursus libero. Sed sollicitudin et leo vel cursus.</span>
+                <div id="accordion" class="myaccordion">
+                    <div class="card">
+                      <div class="card-header" id="headingOne">
+                        <h2 class="mb-0">
+                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" 
+                          aria-expanded="true" aria-controls="collapseOne">
+                            Nuestra historia
+                          </button>
+                        </h2>
+                      </div>
+                      <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                          texto de prueba ... 
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="headingTwo">
+                        <h2 class="mb-0">
+                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" 
+                          aria-expanded="true" aria-controls="collapseTwo">
+                            Vision
+                          </button>
+                        </h2>
+                      </div>
+                      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                          Texto de prueba 2...
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="headingThree">
+                        <h2 class="mb-0">
+                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" 
+                          aria-expanded="true" aria-controls="collapseThree">
+                            Mision
+                          </button>
+                        </h2>
+                      </div>
+                      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div class="card-body">
+                          Texto de prueba 3...
+                        </div>
+                      </div>
+                    </div>
+                  </div>
             </div>
 
             
