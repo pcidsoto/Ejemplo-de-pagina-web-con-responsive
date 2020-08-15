@@ -10,6 +10,11 @@
     <link rel="stylesheet" href="css/main.css" >
     <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css" >
     
+    <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="node_modules/jquery/dist/jquery.min.js" ></script>
+        <script src="node_modules/popper.js/dist/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <title>Mano de Monja</title>
   </head>
@@ -88,7 +93,7 @@
             <!-- Separacion de linea-->
             <hr>
             <!-- d-flex flex-wrap flex-row maneja como si fuera row sin flex-->
-            <div class="container" >
+            <div class="d-flex flex-wrap flex-row" >
             <div class="card-deck">
 
                 <div class="card ">
@@ -181,6 +186,55 @@
             </div>
         </div>
     <hr>
+    <!--contenedor del boton (Alineación)-->
+    <div class="d-flex flex-wrap flex-row justify-content-center">
+
+        <div class="col-sm-3 text-center">
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#exampleModalCenter">Suscribirse</button>
+        
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Suscribirse</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            
+                            <div class="md-form mb-5">
+                                <i class="fas fa-user prefix grey-text"></i>
+                                <input type="text" id="nombre" class="form-control validate" placeholder="Ingrese su Nombre">
+                                
+                              </div>
+                      
+                              <div class="md-form mb-4">
+                                <i class="fas fa-envelope prefix grey-text"></i>
+                                <input type="email" id="email" class="form-control validate" placeholder="Ingrese su Email">
+                              </div>
+
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary col-sm-3 " data-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-primary col-sm-4">Enviar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+    
+    
+    <hr>
+
     <footer class="container">
         <div class="d-flex flex-wrap flex-row justify-content-between">
             <!--list-unstyled quita las viñetas-->
@@ -211,10 +265,10 @@
 
         </div>
     </footer>
-    <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="node_modules/jquery/dist/jquery.min.js" ></script>
-        <script src="node_modules/popper.js/dist/popper.min.js"></script>
-        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    
     </body>
+<!-- ------------------------------------------------------------   -->
+
+
+    
 </html>
