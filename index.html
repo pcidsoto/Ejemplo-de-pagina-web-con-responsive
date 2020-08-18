@@ -13,9 +13,25 @@
     
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>  
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+    
+     <!-- script para hacer funcionar el tooltip  -->
+
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+            $('[data-toggle="popover"]').popover({
+                placement: "right",
+                trigger: "hover"
+                
+            })
+        })
+    </script>
+    
+
+
 
       
     <title>Mano de Monja</title>
@@ -47,11 +63,9 @@
 
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
-                <img src="images/banner.png" class="imagenjumbo img-fluid" alt="Responsive image">
+                <img src="images/banner.png" class="imagenjumbo img-fluid" alt="Responsive image" data-toggle="tooltip" data-placement="top" title="Irresistible!">
             </div>
 
-
-            
           </div>
         <div class="container text-center">
             <nav aria-label="breadcrumb">
@@ -104,11 +118,13 @@
                 <div class="card ">
                     <img src="images/frambuesa.png" class="card-img-top" alt="Responsive image">
                     <div class="card-body">
-                        <h4 class="card-title">Mermelada de Frambuesa</h4>
+                        <!--Titulo con un tooltip, es necesario activarlo con un scrip-->
+                        <h4 class="card-title" >Mermelada de Frambuesa</h4>
                         <p class="card-text">Mermelada de frambuesa con notas de naranja y canela.</p>
                     </div>
                     <div class="card-footer" >
-                    <button type="button" class="btn btn-primary btn-reserve">Ver</button>
+                    <button type="button" class="btn btn-primary btn-reserve" data-animation="true" 
+                    data-toggle="popover" title="Promoción" data-content="15% Descuento">Ver</button>
                     </div>
                 </div>
                 
@@ -269,9 +285,12 @@
 
         </div>
     </footer>
-    
+   
+
+
+
     </body>
-<!-- ------------------------------------------------------------   -->
+
 
 
     

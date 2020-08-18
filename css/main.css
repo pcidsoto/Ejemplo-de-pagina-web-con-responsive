@@ -115,3 +115,12 @@
     background: transparent;
   }
   
+/*Personalización Popover*/
+  .popover-header {
+    background-color: #DEB6E6;
+    font-size: 20px;
+}
+.popover-body{
+    background-color: #DEB6E6;
+    font-size: 20px;
+}
