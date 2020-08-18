@@ -24,12 +24,45 @@
             $('[data-toggle="tooltip"]').tooltip()
             $('[data-toggle="popover"]').popover({
                 placement: "right",
-                trigger: "hover"})
+                trigger: "hover"
+                })
+
             $('.carousel').carousel({
-                interval: 2000})
+                interval: 2000
+                })
         })
     </script>
     
+    <script>
+
+        $(function (){
+            $('#exampleModalCenter').on('show.bs.modal', function(e){
+                console.log('el modal suscribirse se esta mostrando show');
+                $('#suscripcionbtn').removeClass('btn-primary')
+                $('#suscripcionbtn').addClass('btn-info')
+                $('#suscripcionbtn').css({'background-color':'rgb(156, 122, 189)'})
+                $('#suscripcionbtn').prop('disabled',true)
+                })
+            $('#exampleModalCenter').on('shown.bs.modal', function(e){
+                console.log('el modal suscribirse se esta mostrando shown');
+                })
+                
+            $('#exampleModalCenter').on('hide.bs.modal', function(e){
+                console.log('el modal suscribirse se esta cerrando hide');
+                })
+                
+            $('#exampleModalCenter').on('hidden.bs.modal', function(e){
+                console.log('el modal suscribirse se esta cerrando hidden');
+                
+                $('#suscripcionbtn').prop('disabled',false)
+                $('#suscripcionbtn').removeClass('btn-info')
+                $('#suscripcionbtn').addClass('btn-primary')
+                $('#suscripcionbtn').css({'background-color':'#B6E6DE'})
+                })
+
+                
+        })
+    </script>
 
 
 
@@ -245,11 +278,11 @@
         <div class="col-sm-3 text-center">
 
         <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#exampleModalCenter">Suscribirse</button>
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#exampleModalCenter" id="suscripcionbtn" >Suscribirse</button>
         
             <!-- Modal -->
             <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
                             <h5 class="modal-title" id="exampleModalLongTitle">Suscribirse</h5>
