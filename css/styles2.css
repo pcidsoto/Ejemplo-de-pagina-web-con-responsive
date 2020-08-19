@@ -1,0 +1,100 @@
+.imagenjumbo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+.jumbotron {
+  background-color: #B6D6E6;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+.tab-content {
+  padding-top: 10px;
+}
+.img-fluid {
+  max-width: 100%;
+}
+.sub-title {
+  padding-bottom: 50px;
+}
+.benefic {
+  font-style: italic;
+}
+.footer {
+  padding: 10px 10px 0 10px;
+  background-color: #B6D6E6;
+}
+.card-deck {
+  padding-top: 50px;
+}
+.btn {
+  width: 80%;
+  border: none;
+  background-color: #B6E6DE;
+  color: black;
+}
+.breadcrumb {
+  background-color: #B6E6DE;
+  color: black;
+}
+.footer-icon {
+  padding-right: 10px;
+}
+.contac-size {
+  padding-top: 10px;
+}
+.table-product {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+/*Controla el responsive de manera mas elegante*/
+.card-deck {
+  margin: 0 -15px;
+  justify-content: space-between;
+}
+.card-deck .card {
+  margin: 0 0 1rem;
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .card-deck .card {
+    -ms-flex: 0 0 48.7%;
+    flex: 0 0 48.7%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .card-deck .card {
+    -ms-flex: 0 0 32%;
+    flex: 0 0 32%;
+  }
+}
+@media (min-width: 992px) {
+  .card-deck .card {
+    -ms-flex: 0 0 24%;
+    flex: 0 0 24%;
+  }
+}
+/*CSS ACCORDION*/
+.myaccordion {
+  max-width: 500px;
+  margin: 50px auto;
+}
+/*Card sin borde*/
+.myaccordion .card,
+.myaccordion .card:last-child .card-header {
+  border: none;
+}
+/*fondo de texto transparente*/
+.myaccordion .card-header {
+  border-bottom-color: #7cb0ca;
+  background: transparent;
+}
+/*Personalización Popover*/
+.popover-header {
+  background-color: #DEB6E6;
+  font-size: 20px;
+}
+.popover-body {
+  background-color: #DEB6E6;
+  font-size: 20px;
+}
