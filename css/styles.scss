@@ -1,13 +1,24 @@
 //etiqueta de variable
 //colores base
+//para hacer funcionar el scrip de package.json 
+//npm run watch:scss
 $fondo_base:#B6D6E6;
 $btn_base: #B6E6DE;
+$amarillo: yellow;
+$rojo: red;
+$verde: green;
 
 //definicion de mixin 
 
 @mixin margenes($top, $bottom) {
     margin-top: $top;
     margin-bottom: $bottom;
+}
+
+@mixin mar_top-padd_top-Fondo_color($mar_top,$padd_top,$fondo_color) {
+  margin-top: $mar_top;
+  padding-top: $padd_top;
+  background-color: $fondo_color;
 }
 
 .imagenjumbo{
