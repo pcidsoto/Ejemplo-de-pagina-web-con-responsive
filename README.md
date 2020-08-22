@@ -1,5 +1,5 @@
 ### Sitio web Responsive
-Utilizando Bootstrap y Flexbox, Grunt y diferente herramientas, node_js, sass,
+Utilizando Bootstrap y Flexbox, Gulp y diferente herramientas, node_js, sass,
 
 1. Navbar.
 2. Carousel.
